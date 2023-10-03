@@ -5,9 +5,27 @@ const gerarnumero = (min, max) => Math.floor(math.random() * (max - min + 1))
 const iniciarjogo = (min, max) => {
     const numerodestino = randomInt(min,max);
 //função que irá configurar o ambiente do jogo, aceitando como parâmetro de entrada um número de tentativas, utilizando referências aos elementos HTML no documento que serâo utilizados para 
-//interagir com o jogador. Até o momento, só foram pensados o botão para verificar os palpites e o campo de entrada onde o usuário irá digitar os palpites.
+//interagir com o jogador. Nas três primeiras funções: "botaopalpite","botaoadivinhar", "mensagem", elas estão obtendo como referência elementos HTML com seus repectivos ids: 'palpite','adivinhar' e
+// 'mensagem' e armazenando seu respectivo conteúdo nas funções para atualização do conteúdo HTML conforme o jogo avança.
     const jogo = (numerodetentativas) => {
-        const guessButton = document.getElementById('check');
-        const guessInput = document.getElementById('guess');
-
+        const botaopalpite = document.getElementById('palpite');
+        const botaoadivinhar = document.getElementById('advinhar');
+        const mensagem = document.getElementById('mensagem');
+        
+//função que tem como objetivo obter o valor do campo de entrada "botaoadivinhar", além de convertê-lo em um número inteiro utilizando o "parseInt" e armazenar esse resultado na própria função
+// para a realização da seguinte lógica: se o valor adivinhado for exatamente igual ao número gerado anteriorme com a função "gerarnumero" e 'guardado' pela função "iniciarjogo", retorna a mensagem de parabéns com o número de tentativas até o acerto
+// ou se o número advinhado for menor que o número correto exibe uma mensagem dando uma dica para "chutar" um valor maior, além de adicionar um evento de clique ao elemento HTML, que quando ocorre a função jogo
+// é chamada com 'numerodetentativas + 1', aumentando assim o número de tentativas. A mesma lógica pode ser seguida para o terceiro caso.
+        const adivinhar = parseInt(botaoadivinhar.value);
+        
+        if (adivinhar === numerodestino) {
+            mensagem.textContent = `Parabéns! Você acertou em ${numerodetentativas} tentativas.`;
+        } else if (adivinhar < numerodestino) {
+            mensagem.textContent = 'Tente um número maior.';
+            botaoadivinhar.addEventListener('click', () => jogo(numerodetentativas + 1));
+        } else {
+            mensagem.textContent = 'Tente um número menor.';
+            botaoadivinhar.addEventListener('click', () => jogo(numerodetentativas + 1));
+        }
+    };
 }
