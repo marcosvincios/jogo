@@ -15,3 +15,6 @@ h1 {
 button, input, #message {
     margin: 10px;
 }
+#game {
+    display: none;
+}
