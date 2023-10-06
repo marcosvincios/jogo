@@ -47,6 +47,8 @@ const iniciarjogo = (min, max) => {
 };
 
 //função que tem como objetivo configurar o evento de clique na modalidade "fácil", chamando a função anteriormente definida "iniciarjogo", para iniciar o jogo com um intervalo de número de 1 a 10.
-
+//a mesma justificativa vale para as outras duas linhas.
 document.getElementById('facil').addEventListener('click', () => iniciarjogo(1, 10));
+document.getElementById('medio').addEventListener('click', () => iniciarjogo(1, 50));
+document.getElementById('dificil').addEventListener('click', () => iniciarjogo(1, 100));
 
