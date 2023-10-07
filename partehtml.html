@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>jogo da advinhação</title>
+    <link rel="stylesheet" href="partecss.CSS">
+    <title>Jogo de Adivinhação</title>
 </head>
 <body>
     <h1>Jogo de Adivinhação</h1>
-    <div id="game-container"> 
+    <div id="container-jogo">
         <p>Escolha o nível de dificuldade:</p>
         <button id="facil">Fácil</button>
         <button id="medio">Médio</button>
         <button id="dificil">Difícil</button>
-
-        <div id="game">
+        <div id="jogo">
             <p>Tente adivinhar o número!</p>
-
-        <input type="number" id="advinhar" min="1">
-        <button id="palpite">Verificar</button>
-        <p id="message"></p>
+            <input type="number" id="tentativa" min="1">
+            <button id="verificar">Verificar</button>
+            <p id="mensagem"></p>
+        </div>
     </div>
-</div>
-<script src="script.js"></script>
+    <script src="partejs.js"></script>
 </body>
 </html>
