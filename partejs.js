@@ -21,17 +21,23 @@ const jogarJogo = (tentativas) => {
 //função que tem como objetivo obter o valor do campo de entrada "entradaTentativa", além de convertê-lo em um número inteiro utilizando o "parseInt" e armazenar esse resultado na própria função
 // para a realização da seguinte lógica: se o valor adivinhado for exatamente igual ao número gerado anteriorme com a função "numeroAleatorio" e 'guardado' pela função "iniciarjogo", retorna a mensagem de parabéns com o número de tentativas até o acerto
 // ou se o número advinhado for menor que o número correto exibe uma mensagem dando uma dica para "chutar" um valor maior, além de adicionar um evento de clique ao elemento HTML, que quando ocorre a função jogarJogo
-// é chamada com 'tentativas + 1', aumentando assim o número de tentativas. A mesma lógica pode ser seguida para o terceiro caso.
+// é chamada com 'tentativas + 1', aumentando assim o número de tentativas. A mesma lógica pode ser seguida para o terceiro caso. fazendo também referências a elementos CSS.
 
 const tentativa = parseInt(entradaTentativa.value);
         
 if (tentativa === numeroAlvo) {
     mensagem.textContent = `Parabéns! Você acertou em ${tentativas} tentativas.`;
+    mensagem.classList.remove("tente-novamente", "tente-maior", "tente-menor");
+  mensagem.classList.add("acertou");
 } else if (tentativa < numeroAlvo) {
     mensagem.textContent = 'Tente um número maior.';
+    mensagem.classList.remove("acertou", "tente-novamente", "tente-menor");
+    mensagem.classList.add("tente-maior");
     botaoVerificar.addEventListener('click', () => jogarJogo(tentativas + 1));
 } else {
     mensagem.textContent = 'Tente um número menor.';
+    mensagem.classList.remove("acertou", "tente-novamente", "tente-maior");
+  mensagem.classList.add("tente-menor");
     botaoVerificar.addEventListener('click', () => jogarJogo(tentativas + 1));
 }
 };
@@ -52,4 +58,6 @@ if (tentativa === numeroAlvo) {
 document.getElementById('facil').addEventListener('click', () => iniciarJogo(1, 10));
 document.getElementById('medio').addEventListener('click', () => iniciarJogo(1, 50));
 document.getElementById('dificil').addEventListener('click', () => iniciarJogo(1, 100));
+
+
 
