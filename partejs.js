@@ -81,7 +81,7 @@ const verificarResposta = (nome) =>  (apelido) => (palpite) => {
     const questão15 = verificarResposta('Leonardo da Vinci')('Da Vinci')
     const questão16 = verificarResposta('William Shakespeare')('Shakespeare')
     const questão17 = verificarResposta('Joaquim Maria Machado de Assis')('Machado de Assis')
-    const questão18 = verificarResposta('(alterar depois)Confúcio')(Confúcio)
+    const questão18 = verificarResposta(`Ch'iu K'ung`)('Confúcio')
     const questão19 = verificarResposta('Sun Wu')('Sun Tzu')
 
 
