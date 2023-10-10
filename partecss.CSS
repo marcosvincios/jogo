@@ -86,28 +86,58 @@ input:focus {
     animation: fadeIn 1s ease;
     margin-top: 20px; 
   padding: 10px;
+  text-align: center;
 }
 
 #mensagem.acertou {
     color: #4CAF50; 
-    font-weight: bold; 
+    font-weight: bold;
+    animation: bounceIn 1s;
   }
 
   #mensagem.tente-novamente {
     color: #FF5722; 
     font-weight: bold;
+    animation: shake 0.5s;
   }
 
   #mensagem.tente-maior {
     color: #E74C3C; 
     font-weight: bold;
+    animation: shake 0.5s;
   }
 
   #mensagem.tente-menor {
     color: #3498DB; 
     font-weight: bold; 
+    animation: shake 0.5s;
   }
 
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
 
   #mensagem.new-message {
     animation: pulse 1s infinite;
