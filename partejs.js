@@ -71,4 +71,5 @@ document.getElementById('dificil').addEventListener('click', () => iniciarJogo(1
 
 
 
+
     
