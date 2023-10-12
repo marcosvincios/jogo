@@ -25,7 +25,7 @@ input {
   outline: none;
 }
 button:active{
-    margin: 10px;
+  margin: 10px;
   text-align: left;
   padding: 15px 30px;
   font-size: 20px ;
@@ -50,7 +50,6 @@ button:active{
   border-radius: 0 0 15px 15px;
   max-width: 400px;
   margin: 0 auto;
-  transition: transform 0.3s ease;
 }
 div {
   margin: 20px auto;
@@ -58,7 +57,6 @@ div {
   background-color: rgba(255, 255, 255, 0.95);
   max-width: 400px;
   margin: 0 auto;
-  transition: transform 0.3s ease;
 }
 section {
   margin: 100px;
@@ -66,8 +64,6 @@ section {
 span {
   font-size: 20px;
   color: #555;
-  transition: transform 0.3s ease;
-  animation: fadeIn 1s ease;
   margin-top: 20px;
   padding: 10px;
   text-align: left;
