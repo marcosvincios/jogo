@@ -4,12 +4,12 @@ const faceis = [
     questao: `"O homem é, por natureza, um animal político."`,
     nome: "Aristóteles",
   },
-  { 
-    questao: `"Só sei que nada sei"`, 
-    nome: "Sócrates" 
+  {
+    questao: `"Só sei que nada sei."`,
+    nome: "Sócrates",
   },
   {
-    questao: `"Eu só deixo o catete morto"`,
+    questao: `"Eu só deixo o catete morto."`,
     nome: "Getúlio Vargas",
     apelido: "Vargas",
   },
@@ -24,7 +24,7 @@ const faceis = [
     apelido: "Platão",
   },
   {
-    questao: `"Aquilo que se faz por amor está sempre além do bem e do mal."`,
+    questao: `"Quando você olha muito tempo para um abismo, o abismo olha para você."`,
     nome: "Friedrich Nietzsche",
     apelido: "Nietzsche",
   },
@@ -38,7 +38,8 @@ const faceis = [
     nome: "Immanuel Kant",
     apelido: "Kant",
   },
-]; 
+];
+
 
 // Função para armazenar os parâmetros em uma constante e exibir as respectivas questões
 const questoesEscolhidas = questoesSelecionadas(
