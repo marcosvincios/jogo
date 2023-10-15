@@ -1,44 +1,86 @@
 //constante para armazenar e agrupar as questões
 const dificeis = [
   {
-    questao: `"O homem é, por natureza, um animal político."`,
-    nome: "Aristóteles",
-  },
-  { 
-    questao: `"Só sei que nada sei"`, 
-    nome: "Sócrates" 
+    questao: `"A vida não é um problema a ser resolvido, mas uma realidade a ser experimentada."`,
+    nome: "Soren Kierkegaard",
+    apelido: "Kierkegaard",
   },
   {
-    questao: `"Eu só deixo o catete morto"`,
-    nome: "Getúlio Vargas",
-    apelido: "Vargas",
+    questao: `"A vida feliz consiste na tranquilidade da mente."`,
+    nome: "Marco Túlio Cicero",
+    apelido: "Cicero",
   },
   {
-    questao: `"Independência ou morte!"`,
-    nome: "Dom Pedro I",
-    apelido: "Dom Pedro",
+    questao: `"A liberdade consiste em fazer o que se deseja."`,
+    nome: ".John Stuart Mill",
+    apelido: "Stuart Mill",
   },
   {
-    questao: `"Tente mover o mundo, mas comece movendo a si mesmo."`,
-    nome: "Arístocles",
-    apelido: "Platão",
+    questao: `"Se queres prever o futuro, estuda o passado."`,
+    nome: "Ch'iu K'ung",
+    apelido: "Confúcio",
   },
   {
-    questao: `"Aquilo que se faz por amor está sempre além do bem e do mal."`,
-    nome: "Friedrich Nietzsche",
-    apelido: "Nietzsche",
+    questao: `"A ambição é o último recurso do fracassado."`,
+    nome: "Oscar Wilde",
+    apelido: "Wilde",
   },
   {
-    questao: `"Uma vida não examinada não merece ser vivida."`,
-    nome: "Arístocles",
-    apelido: "Platão",
+    questao: `"Todos veem o que você parece ser, mas poucos sabem o que você realmente é."`,
+    nome: "Nicolau Maquiavel",
+    apelido: "Maquiavel",
   },
   {
-    questao: `"Acredite em milagres, mas não dependa deles."`,
+    questao: `"Exige muito de ti e espera pouco dos outros. Assim, evitarás muitos aborrecimentos."`,
+    nome: "Ch'iu K'ung",
+    apelido: "Confúcio",
+  },
+  {
+    questao: `"Vou-lhe dizer um grande segredo, meu caro. Não espere o juízo final. Ele realiza-se todos os dias."`,
+    nome: "Albert Camus",
+    apelido: "Camus",
+  },
+  {
+    questao: `"A essência do conhecimento consiste em aplicá-lo, uma vez possuído."`,
+    nome: "Ch'iu K'ung",
+    apelido: "Confúcio",
+  },
+  {
+    questao: `"Ler fornece ao espírito materiais para o conhecimento, mas só o pensar faz nosso o que lemos."`,
+    nome: "John Locke",
+    apelido: "Locke",
+  },
+  {
+    questao: `"Todo o conhecimento humano começou com intuições, passou daí aos conceitos e terminou com ideias."`,
     nome: "Immanuel Kant",
     apelido: "Kant",
   },
-]; 
+  {
+    questao: `"Não se ensina filosofia; ensina-se a filosofar."`,
+    nome: "Immanuel Kant",
+    apelido: "Kant",
+  },
+  {
+    questao: `"A filosofia é composta de respostas incompreensíveis para questões insolúveis."`,
+    nome: "Henry Brooks Adams",
+    apelido: "Henry Adams",
+  },
+  {
+    questao: `"A filosofia que cultivo não é nem tão bárbara nem tão inacessível que rejeite as paixões; pelo contrário, é só nelas que reside a doçura e felicidade da vida."`,
+    nome: "René Descartes",
+    apelido: "Descartes",
+  },
+  {
+    questao: `"O truque da filosofia é começar por algo tão simples que ninguém ache digno de nota e terminar por algo tão complexo que ninguém entenda."`,
+    nome: "Bertrand Arthur William Russell",
+    apelido: "Russell",
+  },
+  {
+    questao: `"A pior coisa que pode acontecer a um socialista é ter seu país governado por socialistas que não são seus amigos."`,
+    nome: "Ludwig von Mises",
+    apelido: "Mises",
+  },
+];
 
 // Função para armazenar os parâmetros em uma constante e exibir as respectivas questões
 const questoesEscolhidas = questoesSelecionadas(
