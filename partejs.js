@@ -4,7 +4,8 @@
 const numeroAleatorio = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 
-//função que tem como objetivo "guardar" o número inteiro aleatório gerado anteriormente na função "numeroAleatório"
+//função usada para iniciar um novo jogo com base no nível de dificuldade selecionado, sendo esse nível representado pelos valores mínimos e máximos, ou seja, essa função vai gerar e armazenar um número aleaório
+// em um determinado intervalo reutilizando a função anterior, no caso "numerAleatorio", para a aplicação da lógica do jogo
 
 const iniciarJogo = (min, max) => {
     const numeroAlvo = numeroAleatorio(min, max);
