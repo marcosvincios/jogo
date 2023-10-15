@@ -4,29 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="partecsshistorica.CSS" />
+    <script type="text/javascript" src="./utils.js"></script>
+    <script
+      type="text/javascript"
+      src="./partejshistoricaFacil.js"
+      defer
+    ></script>
     <title>Modo Fácil</title>
   </head>
+
   <body>
-    <script type="text/javascript" src="./partejshistorica.js" defer></script>
     <h1>Modo Fácil</h1>
-    <div id="divInicial">
-      <span id="questao1"></span><br />
-      <input id="inputq1" placeholder="Insira sua resposta" type="text" />
-      <span id="output1"></span>
-    </div>
     <div>
-      <span id="questao2"></span><br />
-      <input id="inputq2" placeholder="Insira sua resposta" type="text" />
+      <span class="frase" id="questao1"></span>
+      <input id="inputq1" placeholder="Insira sua resposta" type="text" /><br />
+      <span class="resultado" id="output1"></span><br /><br /><br />
+      <span class="frase" id="questao2"></span>
+      <input id="inputq2" placeholder="Insira sua resposta" type="text" /><br />
+      <span class="resultado" id="output2"></span><br /><br /><br />
+      <span class="frase" id="questao3"></span>
+      <input id="inputq3" placeholder="Insira sua resposta" type="text" /><br />
+      <span class="resultado" id="output3"></span><br /><br /><br />
+      <span class="frase" id="questao4"></span>
+      <input id="inputq4" placeholder="Insira sua resposta" type="text" /><br />
+      <span class="resultado" id="output4"></span><br /><br /><br />
     </div>
-    <div>
-      <span id="questao3"></span><br />
-      <input id="inputq3" placeholder="Insira sua resposta" type="text" />
-    </div>
-    <div id="divFinal">
-      <span id="questao4"></span><br />
-      <input id="inputq4" placeholder="Insira sua resposta" type="text" />
-    </div>
-    <button id="enviarRespostaID" onclick="">Enviar Resposta</button><br />
-    <a href="./partehtmlhistorica.html"><button>Voltar</button></a>
+    <button id="enviarRespostaID" class="botaoHis">Enviar Resposta</button>
+    <br />
+    <a href="./partehtmlhistorica.html"
+      ><button class="botaoHis">Voltar</button></a
+    >
   </body>
 </html>
